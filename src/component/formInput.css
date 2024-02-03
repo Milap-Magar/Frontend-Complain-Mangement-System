@@ -1,0 +1,21 @@
+.formInputContainer {
+  position: relative;
+  width: 20vw;
+  height: 10vh;
+}
+
+.formInput {
+  position: relative;
+}
+.input {
+  padding: 10px;
+}
+
+.icon {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  transform: translateY(-50%);
+  top: 65%;
+  left: 55%;
+}

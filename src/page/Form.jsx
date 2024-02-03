@@ -1,13 +1,10 @@
 import React from "react";
 import { FormInput } from "../component";
+import { SiSymbolab } from "react-icons/si";
+import { RiLockPasswordFill } from "react-icons/ri";
 import "./index.css";
 
 const Form = () => {
-  // const [values, setValues] = useState({
-  //   Symbol: "",
-  //   Password: "",
-  // });
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
@@ -16,11 +13,23 @@ const Form = () => {
 
   return (
     <>
-      <form action="" onSubmit={handleSubmit}>
-        <FormInput name="symbol" placeholder="Symbol" />
-        <FormInput name="password" placeholder="Password" />
-        <button type="submit">Submit</button>
+    <div className="form-wrapper">
+      <form action="" onSubmit={handleSubmit} className="form-container">
+        <FormInput
+          type="number"
+          name="symbol"
+          placeholder="Symbol"
+          icon1={<SiSymbolab />}
+        />
+        <FormInput
+          type="password"
+          name="password"
+          placeholder="Password"
+          icon2={<RiLockPasswordFill />}
+        />
+        <button type="submit" className="btn-login">Login</button>
       </form>
+      </div>
     </>
   );
 };
