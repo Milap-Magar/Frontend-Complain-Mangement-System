@@ -16,11 +16,11 @@ const App = () => {
           <Route path={"/"} element={<Form />} />
           {/* For admin routing */}
           <Route path={"/admin"} element={<FormAdmin />}>
-            <Route path={"/dashboard"} element={<DashboardAdmin />} />
+            <Route path={"/admin/dashboard"} element={<DashboardAdmin />} />
           </Route>
           {/* For user login  */}
           <Route path={"/user"} element={<FormUser />}>
-            <Route path={"/dashboard"} element={<DashboardUser />} />
+            <Route path={"/user/dashboard"} element={<DashboardUser />} />
           </Route>
         </Routes>
       </Router>

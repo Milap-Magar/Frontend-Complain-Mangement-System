@@ -1,4 +1,5 @@
 import React from "react";
+import FormInput from "../../component/FormInput.component";
 
 const FormUser = () => {
   const handleSubmit = (e) => {
