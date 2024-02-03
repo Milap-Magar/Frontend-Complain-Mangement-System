@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DashboardAdmin = () => {
+const wDashboardAdmin = () => {
   return (
     <div>DashboardAdmin</div>
   )
