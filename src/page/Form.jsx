@@ -1,15 +1,17 @@
-import React from "react";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { FormInput } from "../component";
+import "./index.css";
 
 const Form = () => {
-  const [values, setValues] = useState({
-    Symbol: "",
-    Password: "",
-  });
+  // const [values, setValues] = useState({
+  //   Symbol: "",
+  //   Password: "",
+  // });
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const data = new FormData(e.target);
+    console.log(Object.fromEntries(data.entries()));
   };
 
   return (
