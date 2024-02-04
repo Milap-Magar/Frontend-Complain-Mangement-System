@@ -1,11 +1,11 @@
 import React from 'react'
-import Logo from "../assets/logo.png";
+import "./formInput.css";
 
-const Image = () => {
+const Image = (props) => {
   return (
-    <div>
-      <img src={Logo} alt="" />
-    </div>
+    <figure className=''>
+      <img src={props.logo} alt="logo image" className={props.className} />
+    </figure>
   )
 }
 

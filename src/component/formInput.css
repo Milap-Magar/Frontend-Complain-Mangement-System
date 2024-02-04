@@ -1,6 +1,13 @@
+/* for image */
+.logo-img{
+ width: 150px;
+ height: 140px;
+ object-fit: contain;
+}
+
 .formInputContainer {
   position: relative;
-  width: 20vw;
+  width: 200px;
   height: 10vh;
 }
 
@@ -16,6 +23,29 @@
   width: 27px;
   height: 27px;
   transform: translateY(-50%);
-  top: 65%;
-  left: 55%;
+  top: 25px;
+  left: 160px;
+}
+
+@media (max-width: 300px) {
+  .formInputContainer {
+    position: relative;
+    width: 200px;
+    height: 10vh;
+  }
+  .formInput {
+    position: relative;
+  }
+  .input {
+    padding: 10px;
+  }
+  
+  .icon {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    transform: translateY(-50%);
+    top: 650px;
+    left: 790px;
+  }
 }
