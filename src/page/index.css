@@ -10,7 +10,8 @@
   align-items: center;
 }
 .form-container {
-  background-color: black;
+  background-color: transparent;
+  border: 2px solid black;
   width: 300px;
   height: 70vh;
   gap: 10px;
@@ -20,6 +21,7 @@
   padding: 30px;
   transform: translateY(10%);
   border-radius: 10%;
+  box-shadow: 3px 3px 5px;
 }
 .checkbox {
   display: flex;
@@ -35,9 +37,15 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+  .form-container {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+  }
+}
+
 @media screen and (max-width: 600px) {
   .form-container {
-    width: 60%; /* Adjust the width as needed for smaller screens */
+    width: 70%; /* Adjust the width as needed for smaller screens */
   }
 }
 

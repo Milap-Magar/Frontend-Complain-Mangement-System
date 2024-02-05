@@ -17,7 +17,8 @@ const Form = () => {
       <div className="main-wrapper">
         <div className="form-wrapper">
           <form action="" onSubmit={handleSubmit} className="form-container">
-            <Image logo={Logo} className='logo-img' />
+            <h2>Login CMS</h2>
+            <Image logo={Logo} className="logo-img" />
             <FormInput
               type="number"
               name="symbol"
