@@ -7,13 +7,14 @@ import {
 } from "./page";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+import Register from "./page/Register";
 
 const App = () => {
   return (
     <>
       <Router>
         <Routes>
-          <Route path={"/"} element={<Form />} />
+          <Route path={"/"} element={<Register />} />
           {/* For admin routing */}
           <Route path={"/admin"} element={<FormAdmin />}>
             <Route path={"/admin/dashboard"} element={<DashboardAdmin />} />
